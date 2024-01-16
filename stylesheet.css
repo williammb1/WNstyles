@@ -1,0 +1,89 @@
+/* External Stylesheet */
+
+/* Load Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Reset margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;  /* Apply Open Sans font */
+}
+
+#question-container, #answer {
+    border-radius: 3px; /* This will apply the curve to every box */
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#question {
+    flex-grow: 1;
+    width: auto;
+    height: 40px;  /* Adjust this value to your desired height */
+    padding: 10px;  /* Adjust padding as necessary */  
+}
+
+#answer {
+    border: 1px solid #868C96;
+    background-color: #F7F7F8;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+    transition: min-height 0.3s ease;  
+}
+
+#loading-messages {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    justify-content: center; /* Center the content horizontally for flex container */
+    align-items: center; /* Center the content vertically for flex container */
+    height: 50px; /* Set a fixed height */
+    width: 100%; /* Ensure the div takes full width */
+}
+
+/* Ensure no gap at the top inside the answer box */
+#answer > * {
+    margin-top: 0;
+}
+
+#loading iframe {
+    width: 120px; /* default width */
+    height: 57px; /* default height */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    body, input, button, #loading-messages, #answer {
+        font-size: calc(100% - 2px); /* Decrease font size by 2px */
+    }
+
+    #question-container {
+        height: 30px; /* Set height of the question container to 30px on mobile */
+    }
+
+    #question {
+        padding: 5px; /* Decrease padding in the question input box */
+        /* Adjust height if needed, e.g., height: 100%; */
+    }
+     #loading iframe {
+    width: 36px; /* default width */
+    height: 17.1px; /* default height */
+}
+ 
+    /* Move the loading/answer container down by 5px */
+    #answer {
+        margin-top: 30px; /* Increase margin-top to move the container down */
+        padding: 5px;
+ 
+}
+}
