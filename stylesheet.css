@@ -73,17 +73,25 @@ body, input, button {
 
     #question {
         padding: 5px; /* Decrease padding in the question input box */
-        /* Adjust height if needed, e.g., height: 100%; */
     }
-     #loading iframe {
-    width: 36px; /* default width */
-    height: 17.1px; /* default height */
-}
+
+    #enterButton {
+        display: inline-block; /* Make the button visible */
+        margin-left: 5px; /* Add some space between the button and input field */
+        padding: 5px 10px; /* Adjust padding for the button */
+        border: 1px solid #868C96; /* Match border style to the input field */
+        border-radius: 3px; /* Match border-radius to the input field */
+        background-color: #F7F7F8; /* Match background-color to the input field */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+
+    #loading iframe {
+        width: 36px; /* Adjust width for mobile */
+        height: 17.1px; /* Adjust height for mobile */
+    }
  
-    /* Move the loading/answer container down by 5px */
     #answer {
         margin-top: 30px; /* Increase margin-top to move the container down */
         padding: 5px;
- 
-}
+    }
 }
