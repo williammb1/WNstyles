@@ -78,8 +78,8 @@ body, input, button {
     padding: 5px; 
     border: 1px solid #868C96; 
     border-radius: 3px; 
-    background-color: #01b700; 
-    color: ##c90c0f;
+    background-color: #c90c0f; 
+    color: #ffffff;
     font-weight: bold; 
     cursor: pointer; 
     text-align: center; 
