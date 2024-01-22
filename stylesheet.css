@@ -10,12 +10,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
 }
 
 body, input, button {
-    font-family: 'Open Sans', sans-serif;  /* Apply Open Sans font */
+    font-family: 'Open Sans', sans-serif;  
 }
 
-#question-container, #answer {
-    border-radius: 3px; /* This will apply the curve to every box */
+#question-container {
     display: flex;
+    margin-top: 5px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -23,8 +23,12 @@ body, input, button {
 #question {
     flex-grow: 1;
     width: auto;
-    height: 40px;  /* Adjust this value to your desired height */
-    padding: 10px;  /* Adjust padding as necessary */  
+    height: 40px;  
+    padding: 10px;   
+}
+
+#enterButton {
+    display: none; 
 }
 
 #answer {
@@ -41,57 +45,54 @@ body, input, button {
     transition: min-height 0.3s ease;  
 }
 
+#loading iframe {
+    width: 120px; 
+    height: 57px; 
+}
+
 #loading-messages {
     font-size: 16px;
     color: #555;
     display: flex;
-    justify-content: center; /* Center the content horizontally for flex container */
-    align-items: center; /* Center the content vertically for flex container */
-    height: 50px; /* Set a fixed height */
-    width: 100%; /* Ensure the div takes full width */
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
 }
 
-/* Ensure no gap at the top inside the answer box */
 #answer > * {
     margin-top: 0;
 }
 
-#loading iframe {
-    width: 120px; /* default width */
-    height: 57px; /* default height */
-}
-
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-    body, input, button, #loading-messages, #answer {
-        font-size: calc(100% - 2px); /* Decrease font size by 2px */
-    }
-
-    #question-container {
-        height: 30px; /* Set height of the question container to 30px on mobile */
-    }
-
     #question {
-        padding: 5px; /* Decrease padding in the question input box */
+        flex-grow: 0; 
+        width: calc(100% - 60px); 
     }
 
     #enterButton {
-        display: inline-block; /* Make the button visible */
-        margin-left: 5px; /* Add some space between the button and input field */
-        padding: 5px 10px; /* Adjust padding for the button */
-        border: 1px solid #868C96; /* Match border style to the input field */
-        border-radius: 3px; /* Match border-radius to the input field */
-        background-color: #F7F7F8; /* Match background-color to the input field */
-        cursor: pointer; /* Change cursor to pointer on hover */
-    }
+    display: inline-block; 
+    width: 50px; 
+    margin-left: 5px; 
+    padding: 5px; 
+    border: 1px solid #868C96; 
+    border-radius: 3px; 
+    background-color: #01b700; 
+    color: ##c90c0f;
+    font-weight: bold; 
+    cursor: pointer; 
+    text-align: center; 
+}
+
 
     #loading iframe {
-        width: 36px; /* Adjust width for mobile */
-        height: 17.1px; /* Adjust height for mobile */
+        width: 36px; 
+        height: 17.1px; 
     }
- 
+    
     #answer {
-        margin-top: 30px; /* Increase margin-top to move the container down */
         padding: 5px;
+        margin-top: 5px;
     }
 }
