@@ -1,0 +1,141 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+#flat-chat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Feedback Extension Styles */
+.vfrc-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vfrc-feedback--description {
+    font-size: 0.8em;
+    color: grey;
+    pointer-events: none;
+}
+
+.vfrc-feedback--buttons {
+    display: flex;
+}
+
+.vfrc-feedback--button {
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+    border: none;
+    background: none;
+    opacity: 0.5;
+}
+
+.vfrc-feedback--button:hover {
+    opacity: 0.7;
+}
+
+.vfrc-feedback--button.selected {
+    opacity: 0.8;
+}
+
+.vfrc-feedback--button.disabled {
+    pointer-events: none;
+}
+
+.vfrc-feedback--button:first-child svg,
+.vfrc-feedback--button:last-child svg {
+    fill: none;
+    stroke: none;
+    border: none;
+}
+
+.vfrc-feedback--button:last-child svg {
+    margin-left: 4px;
+    transform: rotate(180deg);
+}
+
+/* Launcher Styles */
+.vfrc-launcher {
+    width: 240px;
+    height: 96px;
+    border-radius: 20px;
+    padding: 0;
+    background-color: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: none;
+    border: none;
+}
+
+.vfrc-launcher img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.vfrc-launcher:hover {
+    background-color: #2C3067;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Watermark Customisation */
+.vfrc-footer--watermark {
+    font-size: 0;
+    visibility: hidden;
+}
+
+.vfrc-footer--watermark::after {
+    content: "Custom built for Wireless Nation by Willbot.ai";
+    visibility: visible;
+    font-size: 14px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .vfrc-launcher {
+        width: 168px;
+        height: 84px;
+    }
+
+    .vfrc-footer--watermark::after {
+        font-size: 10px;
+    }
+
+    .vfrc-proactive-close {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        z-index: 10;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vfrc-proactive-close .vfrc-icon {
+        width: 10px;
+        height: 10px;
+        fill: #333;
+        transform: translate(6.75px, 6.75px);
+    }
+
+    .vfrc-proactive-close:hover {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
