@@ -99,6 +99,13 @@ body, html {
     font-size: 14px;
 }
 
+<style>
+    /* Hide the close button in the Voiceflow chat widget */
+    #voiceflow-chat .vfrc-chat--close-button {
+        display: none !important;
+    }
+</style>
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .vfrc-launcher {
