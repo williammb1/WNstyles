@@ -1,0 +1,120 @@
+/* Your existing CSS */
+.vfrc-launcher {
+  width: 240px; /* Double the width */
+  height: 96px; /* Double the height */
+  border-radius: 20px; /* Adjust the border-radius for rounded corners */
+  padding: 0; /* Set padding to 0 */
+  background-color: transparent; /* Clear background */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+  box-shadow: none; /* Remove any shadow */
+  border: none; /* Remove any border */
+}
+
+.vfrc-launcher img {
+  width: 100%; /* Make the image width fill the container */
+  height: 100%; /* Make the image height fill the container */
+  object-fit: cover; /* Cover the container without distorting the image, cropping it if necessary */
+  border-radius: 20px; /* Ensure the image corners are rounded like the launcher */
+}
+
+.vfrc-launcher:hover {
+  background-color: #2C3067; /* Dark red background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Hide the original watermark text */
+.vfrc-footer--watermark {
+  font-size: 0; /* Hides the text by setting its font size to 0 */
+  visibility: hidden; /* Makes the element invisible */
+}
+
+/* Add your custom text */
+.vfrc-footer--watermark::after {
+  content: "Custom built for Wireless Nation by Willbot.ai";
+  visibility: visible; /* Make the pseudo-element visible */
+  font-size: 14px; /* Restore the font size for your custom text */
+  /* Add additional styling as needed */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Your existing CSS */
+.vfrc-launcher {
+  width: 240px; /* Double the width */
+  height: 96px; /* Double the height */
+  border-radius: 20px; /* Adjust the border-radius for rounded corners */
+  padding: 0; /* Set padding to 0 */
+  background-color: transparent; /* Clear background */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+  box-shadow: none; /* Remove any shadow */
+  border: none; /* Remove any border */
+}
+
+.vfrc-launcher img {
+  width: 100%; /* Make the image width fill the container */
+  height: 100%; /* Make the image height fill the container */
+  object-fit: cover; /* Cover the container without distorting the image, cropping it if necessary */
+  border-radius: 20px; /* Ensure the image corners are rounded like the launcher */
+}
+
+.vfrc-launcher:hover {
+  background-color: #2C3067; /* Dark red background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Hide the original watermark text */
+.vfrc-footer--watermark {
+  font-size: 0; /* Hides the text by setting its font size to 0 */
+  visibility: hidden; /* Makes the element invisible */
+}
+
+/* Add your custom text */
+.vfrc-footer--watermark::after {
+  content: "Custom built for Wireless Nation by Willbot.ai";
+  visibility: visible; /* Make the pseudo-element visible */
+  font-size: 14px; /* Restore the font size for your custom text */
+  /* Add additional styling as needed */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .vfrc-launcher {
+    width: 168px;
+    height: 84px;
+  }
+
+  .vfrc-footer--watermark::after {
+    font-size: 10px;
+  }
+
+  /* Force the close button to always be visible */
+  .vfrc-proactive-close {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Style for the close icon (move it down 3px and to the right 3px) */
+  .vfrc-proactive-close .vfrc-icon {
+    width: 10px;
+    height: 10px;
+    fill: #333;
+    transform: translate(6.75px, 6.75px); 
+  }
+
+  .vfrc-proactive-close:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
