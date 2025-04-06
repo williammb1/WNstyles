@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+  .vfrc-launcher {
+    width: 240px !important;
+    height: 96px !important;
+  }
+}
