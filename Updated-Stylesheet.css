@@ -1,17 +1,13 @@
 /* Default: scale up launcher */
 .vfrc-launcher {
-  transform: scale(1.8) !important;
+  transform: scale(1.5) !important;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
 
 /* Maintain scale on hover */
 .vfrc-launcher:hover {
-  transform: scale(1.9) !important;
-}
-
-.vfrc-launcher--open {
-  transform: scale(1) !important;
+  transform: scale(1.6) !important;
 }
 
 /* Reset launcher to normal size on smaller screens */
@@ -20,17 +16,3 @@
   .vfrc-launcher:hover,
   .vfrc-launcher.vfrc-launcher-open {
     transform: scale(1) !important;
-  }
-}
-
-/* Move the chat interface popup 10px up on desktop */
-.vfrc-chat--overlay {
-  transform: translateY(-50px);
-}
-
-/* Manual override for mobile to reset the transformation */
-@media (max-width: 768px) {
-  .vfrc-chat--overlay {
-    transform: translateY(0);
-  }
-}
