@@ -12,7 +12,7 @@
 
 /* Maintain scale when open */
 .vfrc-launcher-open {
-  transform: scale(1) !important;
+  width: 1000px !important;
 }
 
 /* Reset to normal size on smaller screens */
