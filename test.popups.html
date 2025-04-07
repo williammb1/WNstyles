@@ -197,20 +197,14 @@
             extensions: [FeedbackExtension, FormExtension],
           },
         }).then(() => {
-          if (window.location.href === 'https://wirelessnation.co.nz/pearl/') {
-            window.voiceflow.chat.open();
-          } else if (window.location.href.includes('https://williammb1.github.io/WNstyles/testpopups.html/')) {
-            window.voiceflow.chat.proactive.clear();
-            setTimeout(() => {
-              window.voiceflow.chat.proactive.push(
-                { type: 'text', payload: { message: 'Hey! Have a question? Feel free to ask me!' } },
-                { type: 'text', payload: { message: 'Click on me to learn more!' } }
-              );
-            }, 10000);
-          }
+          // multiple messages  
+          window.voiceflow.chat.proactive  
+            .push(  
+              { type: 'text', payload: { message: 'Hey there 1' } },  
+              { type: 'text', payload: { message: 'Hey there 2' } }  
+            )
         });
       };
-
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
       v.type = "text/javascript";
       s.parentNode.insertBefore(v, s);
