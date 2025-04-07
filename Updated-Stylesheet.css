@@ -14,7 +14,7 @@
 
 /* Move the actual chat popup 10px higher */
 .vfrc-chat--overlay {
-  bottom: 10px !important; /* Raise popup */
+  bottom: 50px !important; /* Raise popup */
   position: fixed !important;
 }
 
