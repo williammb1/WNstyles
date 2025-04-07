@@ -1,13 +1,13 @@
 /* Default: scale up launcher */
 .vfrc-launcher {
-  transform: scale(1.5) !important;
+  transform: scale(1.3) !important;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
 
 /* Maintain scale on hover */
 .vfrc-launcher:hover {
-  transform: scale(1.6) !important;
+  transform: scale(1.4) !important;
 }
 
 /* Reset launcher to normal size on smaller screens */
