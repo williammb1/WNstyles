@@ -11,8 +11,8 @@
 }
 
 /* Maintain scale when open */
-.vfrc-launcher.vfrc-launcher-open {
-  transform: scale(0.5) !important;
+.vfrc-launcher-open {
+  transform: scale(1) !important;
 }
 
 /* Reset to normal size on smaller screens */
