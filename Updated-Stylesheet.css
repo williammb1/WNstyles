@@ -10,10 +10,7 @@
   transform: scale(1.9) !important;
 }
 
-/* Maintain scale when open */
-.vfrc-launcher-open {
-  width: 1000px !important;
-}
+
 
 /* Reset to normal size on smaller screens */
 @media (max-width: 768px) {
