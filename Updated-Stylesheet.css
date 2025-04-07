@@ -1,13 +1,13 @@
 /* Default: scale up */
 .vfrc-launcher {
-  transform: scale(2) !important;
+  transform: scale(1.8) !important;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
 
 /* Maintain scale on hover */
 .vfrc-launcher:hover {
-  transform: scale(2.1) !important;
+  transform: scale(1.9) !important;
 }
 
 /* Maintain scale when open */
