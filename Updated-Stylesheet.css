@@ -1,5 +1,4 @@
-/* Your existing CSS */
 .vfrc-launcher {
-  width: 240px; /* Double the width */
-  height: 96px; /* Double the height */
+  transform: scale(2);
+  transform-origin: bottom right ; /* Optional: Adjusts where it scales from */
 }
