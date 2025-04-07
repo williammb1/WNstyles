@@ -1,9 +1,8 @@
-/* Default: scale up */
+/* Default: scale up launcher */
 .vfrc-launcher {
   transform: scale(1.8) !important;
-  transform-origin: center;
+  transform-origin: bottom right;
   transition: transform 0.3s ease;
-  position: fixed !important;
 }
 
 /* Maintain scale on hover */
@@ -11,17 +10,18 @@
   transform: scale(1.9) !important;
 }
 
-/* Move the actual chat popup 10px higher */
-.vfrc-chat--overlay {
-  bottom: 50px !important; /* Raise popup */
-  position: fixed !important;
-}
-
-/* Reset to normal size on smaller screens */
+/* Reset launcher to normal size on smaller screens */
 @media (max-width: 768px) {
   .vfrc-launcher,
   .vfrc-launcher:hover,
   .vfrc-launcher.vfrc-launcher-open {
     transform: scale(1) !important;
+  }
+}
+
+/* Move the chat interface popup 10px up on desktop only */
+@media (min-width: 769px) {
+  .vfrc-chat--overlay {
+    transform: translateY(-10px);
   }
 }
