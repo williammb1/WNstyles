@@ -1,11 +1,11 @@
 @media (min-width: 1024px) {
   .vfrc-launcher {
-    width: 240px !important;
+    width: 50px;
   }
 }
 
 @media (max-width: 600px) {
   .vfrc-launcher {
-    width: 120px !important;
+    width: 10px;
   }
 }
