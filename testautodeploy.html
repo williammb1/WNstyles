@@ -197,8 +197,13 @@
             extensions: [FeedbackExtension, FormExtension],
           },
         }).then(() => {
+            if (window.location.href === 'https://williammb1.github.io/WNstyles/testautodeploy.html') {
+                    // Automatically open the chatbot on the specific page
+                    window.voiceflow.chat.open();
           // multiple messages  
-          window.voiceflow.chat.proactive  
+        }  
+         
+        else window.voiceflow.chat.proactive  
             .push(  
               { type: 'text', payload: { message: 'Hey! Have a question? Feel free to ask me!' } },  
               { type: 'text', payload: { message: 'Click on me to learn more!' } }  
