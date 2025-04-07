@@ -22,6 +22,6 @@
 /* Move the chat interface popup 10px up on desktop only */
 @media (min-width: 769px) {
   .vfrc-chat--overlay {
-    transform: translateY(-10px);
+    transform: translateY(-100px);
   }
 }
