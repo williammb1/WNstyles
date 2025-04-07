@@ -7,12 +7,12 @@
 
 /* Maintain scale on hover */
 .vfrc-launcher:hover {
-  transform: scale(2) !important;
+  transform: scale(2.1) !important;
 }
 
 /* Maintain scale when open */
 .vfrc-launcher.vfrc-launcher-open {
-  transform: scale(2) !important;
+  transform: scale(1) !important;
 }
 
 /* Reset to normal size on smaller screens */
