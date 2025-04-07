@@ -24,10 +24,5 @@
   .vfrc-launcher:hover,
   .vfrc-launcher.vfrc-launcher-open {
     transform: scale(1) !important;
-    bottom: 10px !important;
-  }
-
-  .vfrc-chat--overlay {
-    bottom: 10px !important; /* Maintain height adjustment on mobile too */
   }
 }
