@@ -1,4 +1,25 @@
+/* Default: scale up */
 .vfrc-launcher {
-  transform: scale(2);
-  transform-origin: bottom right ; /* Optional: Adjusts where it scales from */
+  transform: scale(2) !important;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+/* Maintain scale on hover */
+.vfrc-launcher:hover {
+  transform: scale(2) !important;
+}
+
+/* Maintain scale when open */
+.vfrc-launcher.vfrc-launcher-open {
+  transform: scale(2) !important;
+}
+
+/* Reset to normal size on smaller screens */
+@media (max-width: 768px) {
+  .vfrc-launcher,
+  .vfrc-launcher:hover,
+  .vfrc-launcher.vfrc-launcher-open {
+    transform: scale(1) !important;
+  }
 }
