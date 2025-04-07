@@ -10,6 +10,10 @@
   transform: scale(1.9) !important;
 }
 
+.vfrc-launcher--open {
+  transform: scale(1) !important;
+}
+
 /* Reset launcher to normal size on smaller screens */
 @media (max-width: 768px) {
   .vfrc-launcher,
