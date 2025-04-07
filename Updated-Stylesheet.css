@@ -1,7 +1,7 @@
 /* Default: scale up */
 .vfrc-launcher {
   transform: scale(1.8) !important;
-  transform-origin: bottom right;
+  transform-origin: center;
   transition: transform 0.3s ease;
   position: fixed !important;
 }
