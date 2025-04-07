@@ -4,7 +4,6 @@
   transform-origin: bottom right;
   transition: transform 0.3s ease;
   position: fixed !important;
-  bottom: 10px !important; /* Keeps launcher aligned if needed */
 }
 
 /* Maintain scale on hover */
