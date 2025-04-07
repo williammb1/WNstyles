@@ -19,9 +19,14 @@
   }
 }
 
-/* Move the chat interface popup 10px up on desktop only */
-@media (min-width: 769px) {
+/* Move the chat interface popup 10px up on desktop */
+.vfrc-chat--overlay {
+  transform: translateY(-50px);
+}
+
+/* Manual override for mobile to reset the transformation */
+@media (max-width: 768px) {
   .vfrc-chat--overlay {
-    transform: translateY(-100px);
+    transform: translateY(0);
   }
 }
